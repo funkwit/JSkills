@@ -2,13 +2,14 @@ package jskills;
 
 import static jskills.numerics.MathUtils.square;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 import jskills.numerics.GaussianDistribution;
 import lombok.Data;
 
 /** Container for a player's rating. **/
-@Data public class Rating {
+@Data public class Rating implements Serializable {
 
     private static final int defaultConservativeStandardDeviationMultiplier = 3;
 
